@@ -1,0 +1,166 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ComboBox?>
+<?import javafx.scene.control.DatePicker?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.shape.Line?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<AnchorPane id="AnchorPane" fx:id="container" prefHeight="1080.0" prefWidth="1920.0" style="-fx-background-color: white;" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="javafx.scene.transition.scene2.Scene2Controller">
+   <children>
+      <ImageView fitHeight="1080.0" fitWidth="1920.0" pickOnBounds="true">
+         <image>
+            <Image url="@../../../../img/panel.png" />
+         </image>
+      </ImageView>
+      <TableView fx:id="table" layoutX="795.0" layoutY="105.0" prefHeight="947.0" prefWidth="688.0" style="-fx-background-color: WHITE; -fx-border-color: WHITE;">
+        <columns>
+          <TableColumn fx:id="codigoP" prefWidth="130.0" text="I D" />     
+          <TableColumn fx:id="productoP" minWidth="0.0" prefWidth="133.0" text="NOMBRE  " />
+            <TableColumn fx:id="fechaIngresoP" prefWidth="131.0" text="FECHA INGRESO" />
+            <TableColumn fx:id="condicionP" prefWidth="105.0" text="CONDICIÓN" />
+            <TableColumn fx:id="tipoP" prefWidth="86.0" text="TIPO" />
+            <TableColumn fx:id="idTipoP" prefWidth="101.0" text="ID TIPO" />
+        </columns>
+      </TableView>
+      <Text fill="WHITE" layoutX="80.0" layoutY="91.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Registro de productos">
+         <font>
+            <Font name="HP Simplified Light" size="35.0" />
+         </font>
+      </Text>
+      <AnchorPane layoutX="44.0" layoutY="118.0" prefHeight="890.0" prefWidth="720.0">
+         <children>
+            <TextField fx:id="codigo" editable="false" layoutX="42.0" layoutY="99.0" prefHeight="51.0" prefWidth="301.0" promptText="I D  PRODUCTO">
+               <font>
+                  <Font name="HP Simplified" size="15.0" />
+               </font></TextField>
+            <TextField fx:id="nombreProducto" layoutX="43.0" layoutY="39.0" prefHeight="51.0" prefWidth="301.0" promptText="NOMBRE DE PRODUCTO">
+               <font>
+                  <Font name="HP Simplified" size="15.0" />
+               </font></TextField>
+            <TextField fx:id="fechaIngreso" layoutX="42.0" layoutY="158.0" prefHeight="53.0" prefWidth="297.0" promptText="FECHA DE INGRESO" visible="false">
+               <font>
+                  <Font name="HP Simplified" size="15.0" />
+               </font></TextField>
+            <TextField fx:id="condicion" layoutX="41.0" layoutY="220.0" prefHeight="55.0" prefWidth="301.0" promptText="CONDICIÓN">
+               <font>
+                  <Font name="HP Simplified" size="15.0" />
+               </font></TextField>
+            <Button fx:id="registrar" layoutX="360.0" layoutY="404.0" mnemonicParsing="false" onAction="#insertButton" prefHeight="41.0" prefWidth="100.0" style="-fx-background-color: GREEN;" text="Registrar" textFill="WHITE" />
+            <TextField fx:id="idEliminar" layoutX="9.0" layoutY="557.0" prefHeight="41.0" prefWidth="185.0" promptText="Ingrese ID para eliminar">
+               <font>
+                  <Font name="HP Simplified" size="15.0" />
+               </font></TextField>
+            <Button layoutX="201.0" layoutY="559.0" mnemonicParsing="false" onAction="#eliminar" prefHeight="41.0" prefWidth="86.0" style="-fx-background-color: GREEN;" text="Eliminar" textFill="WHITE">
+               <font>
+                  <Font name="HP Simplified" size="15.0" />
+               </font></Button>
+            <Text layoutX="87.0" layoutY="512.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Elimine productos">
+               <font>
+                  <Font name="Open Sans" size="23.0" />
+               </font>
+            </Text>
+            <TextField fx:id="idIngresar" layoutX="380.0" layoutY="555.0" prefHeight="41.0" prefWidth="185.0" promptText="Ingrese ID para añadir" visible="false" />
+            <Button fx:id="actualizarStock" layoutX="580.0" layoutY="608.0" mnemonicParsing="false" onAction="#updateButton" prefHeight="41.0" prefWidth="86.0" style="-fx-background-color: black;" text="Actuaizar" textFill="WHITE" visible="false" />
+            <Text layoutX="458.0" layoutY="510.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Editar stock" visible="false">
+               <font>
+                  <Font name="Open Sans" size="23.0" />
+               </font>
+            </Text>
+            <TextField fx:id="Pcantidad" layoutX="382.0" layoutY="608.0" prefHeight="41.0" prefWidth="185.0" promptText="Ingrese cantidad" visible="false" />
+            <Button fx:id="generarCodigo" layoutX="360.0" layoutY="104.0" mnemonicParsing="false" onAction="#generarCodigo" prefHeight="41.0" prefWidth="146.0" style="-fx-background-color: GREEN;" text="Generar ID" textFill="WHITE">
+               <font>
+                  <Font name="HP Simplified Light" size="15.0" />
+               </font></Button>
+            <Button fx:id="imagen" layoutX="360.0" layoutY="351.0" mnemonicParsing="false" onAction="#imagen" prefHeight="41.0" prefWidth="139.0" style="-fx-background-color: GREEN;" text="Cargar imagen" textFill="WHITE">
+               <font>
+                  <Font name="HP Simplified Light" size="15.0" />
+               </font></Button>
+            <Button fx:id="editar" layoutX="467.0" layoutY="404.0" mnemonicParsing="false" onAction="#editar" prefHeight="41.0" prefWidth="100.0" style="-fx-background-color: GREEN;" text="Editar" textFill="WHITE">
+               <font>
+                  <Font name="HP Simplified Light" size="15.0" />
+               </font></Button>
+            <Button fx:id="editarImagen" layoutX="38.0" layoutY="356.0" mnemonicParsing="false" onAction="#editImage" prefHeight="41.0" prefWidth="146.0" style="-fx-background-color: black;" text="Editar imagen" textFill="WHITE" visible="false" />
+            <TextField fx:id="tipo" layoutX="41.0" layoutY="283.0" prefHeight="55.0" prefWidth="301.0" promptText="TIPO" />
+            <TextField fx:id="idTipo" editable="false" layoutX="357.0" layoutY="285.0" prefHeight="51.0" prefWidth="165.0" promptText="I D  TIPO" visible="false" />
+            <ComboBox fx:id="combTipo" layoutX="41.0" layoutY="283.0" prefHeight="55.0" prefWidth="307.0" promptText="TIPO" style="-fx-background-color: WHITE; -fx-border-color: BLACK;" />
+            <DatePicker fx:id="fecha" layoutX="43.0" layoutY="158.0" prefHeight="53.0" prefWidth="301.0" promptText="F E CH A" style="-fx-background-color: WHITE; -fx-border-color: BLACK;" />
+            <Button fx:id="calendario" layoutX="41.0" layoutY="356.0" mnemonicParsing="false" onAction="#calendarioP" prefHeight="41.0" prefWidth="234.0" style="-fx-background-color: GREEN;" text="Crear calendario" textFill="WHITE">
+               <font>
+                  <Font name="HP Simplified Light" size="15.0" />
+               </font>
+            </Button>
+         </children>
+      </AnchorPane>
+      <Button fx:id="regresar" layoutX="479.0" layoutY="56.0" mnemonicParsing="false" onAction="#regresarMenu" prefHeight="46.0" prefWidth="125.0" style="-fx-background-color: GREEN;" text="Menu" textFill="WHITE">
+         <font>
+            <Font name="HP Simplified" size="15.0" />
+         </font></Button>
+      <TextField fx:id="nombreTipo" layoutX="1555.0" layoutY="278.0" prefHeight="51.0" prefWidth="297.0" promptText="NOMBRE DE TIPO PRODUCTO">
+         <font>
+            <Font name="HP Simplified Light" size="15.0" />
+         </font>
+      </TextField>
+      <Text layoutX="1603.0" layoutY="141.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Editar tipo productos">
+         <font>
+            <Font name="HP Simplified" size="23.0" />
+         </font>
+      </Text>
+      <Button fx:id="editarTipo" layoutX="1555.0" layoutY="339.0" mnemonicParsing="false" onAction="#actualizarTipo" prefHeight="41.0" prefWidth="100.0" style="-fx-background-color: GREEN;" text="Editar" textFill="WHITE">
+         <font>
+            <Font name="HP Simplified Light" size="15.0" />
+         </font>
+      </Button>
+      <ComboBox fx:id="comIdTipo" layoutX="1554.0" layoutY="183.0" prefHeight="55.0" prefWidth="297.0" promptText="NOMBRE TIPO" style="-fx-background-color: WHITE; -fx-border-color: BLACK;" />
+      <Text layoutX="1554.0" layoutY="171.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Seleccione el tipo, que desea editar">
+         <font>
+            <Font name="HP Simplified Light" size="15.0" />
+         </font>
+      </Text>
+      <Text layoutX="1555.0" layoutY="265.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Ingrese el nuevo nombre que desea actualizar">
+         <font>
+            <Font name="HP Simplified Light" size="15.0" />
+         </font>
+      </Text>
+      <Line endX="249.0" layoutX="1628.0" layoutY="400.0" startX="-100.0" strokeWidth="3.0" />
+      <TextField fx:id="nuevoTipo" layoutX="1555.0" layoutY="478.0" prefHeight="51.0" prefWidth="307.0" promptText="INSERTE NOMBRE DE TIPO (NUEVO)" />
+      <Text layoutX="1570.0" layoutY="434.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Cree un nuevo tipo producto">
+         <font>
+            <Font name="HP Simplified" size="23.0" />
+         </font>
+      </Text>
+      <Text layoutX="1555.0" layoutY="465.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Ingrese un nuevo nombre">
+         <font>
+            <Font name="HP Simplified Light" size="15.0" />
+         </font>
+      </Text>
+      <Button fx:id="crearTipo" layoutX="1555.0" layoutY="612.0" mnemonicParsing="false" onAction="#crearTipo" prefHeight="41.0" prefWidth="139.0" style="-fx-background-color: GREEN;" text="Crear nuevo tipo" textFill="WHITE">
+         <font>
+            <Font name="HP Simplified Light" size="15.0" />
+         </font>
+      </Button>
+      <Text layoutX="1089.0" layoutY="94.0" strokeType="OUTSIDE" strokeWidth="0.0" text="P R O D U C T O S">
+         <font>
+            <Font name="HP Simplified" size="15.0" />
+         </font>
+      </Text>
+      <TextField fx:id="idNuevo" layoutX="1555.0" layoutY="546.0" prefHeight="51.0" prefWidth="307.0" promptText="INSERTE ID DE TIPO (NUEVO)" />
+      <Text fx:id="confirmarEdicion" layoutX="1666.0" layoutY="365.0" strokeType="OUTSIDE" strokeWidth="0.0">
+         <font>
+            <Font name="HP Simplified" size="15.0" />
+         </font>
+      </Text>
+      <Text fx:id="confirmarCrear" layoutX="1556.0" layoutY="689.0" strokeType="OUTSIDE" strokeWidth="0.0">
+         <font>
+            <Font name="HP Simplified" size="15.0" />
+         </font>
+      </Text>
+   </children>
+</AnchorPane>

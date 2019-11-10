@@ -1,0 +1,21 @@
+<component name="libraryTable">
+  <library name="GardenLife">
+    <CLASSES>
+      <root url="jar://$PROJECT_DIR$/GardenLife/GardenLife.jar!/" />
+      <root url="jar://D:/Hibernate/HibernateCoreJava/HibernateCoreJava/hibernateJarFiles/required/antlr-2.7.7.jar!/" />
+      <root url="jar://D:/Hibernate/HibernateCoreJava/HibernateCoreJava/hibernateJarFiles/required/classmate-0.5.4.jar!/" />
+      <root url="jar://D:/Hibernate/HibernateCoreJava/HibernateCoreJava/hibernateJarFiles/required/commons-collections-3.2.1.jar!/" />
+      <root url="jar://D:/Hibernate/HibernateCoreJava/HibernateCoreJava/hibernateJarFiles/required/dom4j-1.6.1.jar!/" />
+      <root url="jar://D:/Hibernate/HibernateCoreJava/HibernateCoreJava/hibernateJarFiles/required/hibernate-commons-annotations-4.0.1.Final.jar!/" />
+      <root url="jar://D:/Hibernate/HibernateCoreJava/HibernateCoreJava/hibernateJarFiles/required/hibernate-core-4.0.0.Final.jar!/" />
+      <root url="jar://D:/Hibernate/HibernateCoreJava/HibernateCoreJava/hibernateJarFiles/required/hibernate-jpa-2.0-api-1.0.1.Final.jar!/" />
+      <root url="jar://D:/Hibernate/HibernateCoreJava/HibernateCoreJava/hibernateJarFiles/required/jandex-1.0.3.Final.jar!/" />
+      <root url="jar://D:/Hibernate/HibernateCoreJava/HibernateCoreJava/hibernateJarFiles/required/javassist-3.12.1.GA.jar!/" />
+      <root url="jar://D:/Hibernate/HibernateCoreJava/HibernateCoreJava/hibernateJarFiles/required/jboss-logging-3.1.0.CR2.jar!/" />
+      <root url="jar://D:/Hibernate/HibernateCoreJava/HibernateCoreJava/hibernateJarFiles/required/jboss-transaction-api_1.1_spec-1.0.0.Final.jar!/" />
+      <root url="jar://D:/Hibernate/HibernateCoreJava/HibernateCoreJava/hibernateJarFiles/required/mysql-connector-java-5.1.3-rc-bin.jar!/" />
+    </CLASSES>
+    <JAVADOC />
+    <SOURCES />
+  </library>
+</component>

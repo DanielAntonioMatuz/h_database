@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ProjectModuleManager">
+    <modules>
+      <module fileurl="file://$PROJECT_DIR$/GardenLife/GardenLife/GardenLife.iml" filepath="$PROJECT_DIR$/GardenLife/GardenLife/GardenLife.iml" />
+      <module fileurl="file://$PROJECT_DIR$/GardenLife/GardenLife/GardenLife/GardenLife1.iml" filepath="$PROJECT_DIR$/GardenLife/GardenLife/GardenLife/GardenLife1.iml" />
+    </modules>
+  </component>
+</project>

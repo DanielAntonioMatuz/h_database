@@ -1,0 +1,97 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ComboBox?>
+<?import javafx.scene.control.DatePicker?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<AnchorPane id="AnchorPane" prefHeight="1000.0" prefWidth="1900.0" style="-fx-background-color: white;" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="javafx.scene.transition.scene3.Scene3Controller">
+   <children>
+      <ImageView fitHeight="1038.0" fitWidth="1901.0" layoutX="-2.0" layoutY="-4.0" pickOnBounds="true">
+         <image>
+            <Image url="@../../../../img/historial.png" />
+         </image>
+      </ImageView>
+      <TextField fx:id="IdRiego" editable="false" layoutX="512.0" layoutY="133.0" onAction="#buscar" prefHeight="59.0" prefWidth="269.0" promptText="I D     R I E G O" style="-fx-background-color: transparent;" />
+      <Button fx:id="buscarBoton" layoutX="350.0" layoutY="406.0" mnemonicParsing="false" onAction="#insertarRiego" prefHeight="59.0" prefWidth="112.0" style="-fx-background-color: WHITE;" text="A Ñ A D I R" visible="false" />
+      <ImageView fx:id="imagenP" fitHeight="226.0" fitWidth="280.0" layoutX="1067.0" layoutY="175.0" pickOnBounds="true" preserveRatio="true" />
+      <TableView fx:id="venta" layoutX="14.0" layoutY="715.0" prefHeight="296.0" prefWidth="948.0" style="-fx-background-color: WHITE;">
+        <columns>
+          <TableColumn fx:id="codigoRiego" prefWidth="270.99998474121094" text="I D  RIEGO" />
+          <TableColumn fx:id="productoNombre" prefWidth="268.00001525878906" text="PRODUCTO" />
+            <TableColumn fx:id="RiegoFecha" prefWidth="183.99996948242188" text="FECHA" />
+            <TableColumn fx:id="RiegoDia" prefWidth="150.0" text="DIA" />
+        </columns>
+      </TableView>
+    
+      <Button fx:id="regresar" layoutX="36.0" layoutY="30.0" mnemonicParsing="false" onAction="#regresarMenu" style="-fx-background-color: WHITE;" text="M E N U" wrapText="true" />
+      
+      <ComboBox fx:id="FechaFiltro" layoutX="505.0" layoutY="652.0" prefHeight="45.0" prefWidth="248.0" promptText="F E CH A" style="-fx-background-color: WHITE;" />
+      <ComboBox fx:id="BuscarRiego" layoutX="102.0" layoutY="535.0" prefHeight="45.0" prefWidth="248.0" promptText="ID RIEGO" style="-fx-background-color: WHITE;" />
+      <Button fx:id="buscarBoton1" layoutX="429.0" layoutY="528.0" mnemonicParsing="false" onAction="#buscar" prefHeight="59.0" prefWidth="163.0" style="-fx-background-color: WHITE;" text="E L I M I N A R" />
+      <Text fill="WHITE" layoutX="74.0" layoutY="512.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Eliminar historial">
+         <font>
+            <Font name="HP Simplified Light" size="15.0" />
+         </font>
+      </Text>
+      <ImageView fitHeight="248.0" fitWidth="308.0" layoutX="65.0" layoutY="140.0" pickOnBounds="true">
+         <image>
+            <Image url="@../../../../img/calendario.png" />
+         </image>
+      </ImageView>
+      <ImageView fitHeight="248.0" fitWidth="308.0" layoutX="1039.0" layoutY="706.0" pickOnBounds="true">
+         <image>
+            <Image url="@../../../../img/calendario.png" />
+         </image>
+      </ImageView>
+      <ComboBox fx:id="IdProducto" layoutX="1528.0" layoutY="613.0" prefHeight="59.0" prefWidth="280.0" promptText="N O M B R E   P R O D U C T O" style="-fx-background-color: WHITE;" />
+      
+      <ImageView fx:id="imagen" fitHeight="262.0" fitWidth="706.0" layoutX="1117.0" layoutY="129.0" pickOnBounds="true">
+         <image>
+            <Image url="@../../../../img/planta.jpg" />
+         </image>
+      </ImageView>
+      <Button fx:id="galery" layoutX="1406.0" layoutY="940.0" mnemonicParsing="false" onAction="#galeria" prefHeight="45.0" prefWidth="290.0" style="-fx-background-color: WHITE; -fx-border-color: BLACK;" text="V E R   H I S T O R I A L    G L O B A L" wrapText="true" />
+      <DatePicker fx:id="FechaRiego" editable="false" layoutX="515.0" layoutY="294.0" prefHeight="59.0" prefWidth="317.0" promptText="F E C H A" style="-fx-background-color: WHITE;" />
+      <Button fx:id="generarId" layoutX="850.0" layoutY="138.0" mnemonicParsing="false" onAction="#generarCodigo" prefHeight="49.0" prefWidth="112.0" style="-fx-background-color: WHITE;" text="GENERAR ID" />
+      <ComboBox fx:id="ProductNombre" layoutX="511.0" layoutY="219.0" prefHeight="45.0" prefWidth="324.0" promptText="N O M B R E     P R O D U C T O" style="-fx-background-color: white;" />
+      <Button fx:id="Filtro" layoutX="776.0" layoutY="637.0" mnemonicParsing="false" onAction="#Filtrar" style="-fx-background-color: WHITE;" text="F I L T R A R" />
+      <Button fx:id="noFiltrar" layoutX="776.0" layoutY="672.0" mnemonicParsing="false" onAction="#NoFiltrar" style="-fx-background-color: WHITE;" text="Q U I T A R   F I L T R O" />
+      <DatePicker fx:id="FechaFoto" layoutX="1424.0" layoutY="778.0" prefHeight="59.0" prefWidth="362.0" promptText="F E C H A   D E   C A P T U R A" style="-fx-background-color: WHITE;" />
+      <TextField fx:id="IdFoto" editable="false" layoutX="1528.0" layoutY="420.0" prefHeight="49.0" prefWidth="280.0" promptText=" I D   F O T O G R A F Í A" style="-fx-background-color: white;" />
+      <TextField fx:id="URLImage" layoutX="1531.0" layoutY="516.0" prefHeight="49.0" prefWidth="280.0" promptText="U R L   I M A G E N" style="-fx-background-color: WHITE;" />
+      <Button fx:id="generarId1" layoutX="1320.0" layoutY="411.0" mnemonicParsing="false" onAction="#generarCodigoFoto" prefHeight="49.0" prefWidth="173.0" style="-fx-background-color: WHITE; -fx-border-color: BLACK;" text="G E N E R A R   I D" />
+      <Button fx:id="insertFoto" layoutX="1405.0" layoutY="856.0" mnemonicParsing="false" onAction="#insertarFoto" prefHeight="49.0" prefWidth="401.0" style="-fx-background-color: WHITE; -fx-border-color: BLACK;" text="C A R G A R    R E G I S T R O" />
+      <Button layoutX="1207.0" layoutY="516.0" mnemonicParsing="false" onAction="#imagen" prefHeight="49.0" prefWidth="290.0" style="-fx-background-color: WHITE; -fx-border-color: BLACK;" text="S E L E C C I O N A R    I M A G E N" />
+      <ComboBox fx:id="ComboDia" layoutX="517.0" layoutY="376.0" prefHeight="59.0" prefWidth="308.0" promptText="D I A   R I E G O" style="-fx-background-color: WHITE;" />
+      <Button fx:id="calendario" layoutX="299.0" layoutY="401.0" mnemonicParsing="false" onAction="#calendarioP" prefHeight="59.0" prefWidth="189.0" style="-fx-background-color: WHITE;" text="REGISTRAR CALENDARIO" visible="false" />
+      <Button layoutX="850.0" layoutY="212.0" mnemonicParsing="false" onAction="#verificar" prefHeight="59.0" prefWidth="112.0" style="-fx-background-color: WHITE;" text="VERIFICAR" />
+      <Text fill="WHITE" layoutX="400.0" layoutY="232.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Recuerde siempre">
+         <font>
+            <Font size="12.0" />
+         </font>
+      </Text>
+      <Text fill="WHITE" layoutX="400.0" layoutY="246.0" strokeType="OUTSIDE" strokeWidth="0.0" text="verificar su">
+         <font>
+            <Font size="12.0" />
+         </font>
+      </Text>
+      <Text fill="WHITE" layoutX="400.0" layoutY="259.0" strokeType="OUTSIDE" strokeWidth="0.0" text="producto para">
+         <font>
+            <Font size="12.0" />
+         </font>
+      </Text>
+      <Text fill="WHITE" layoutX="400.0" layoutY="270.0" strokeType="OUTSIDE" strokeWidth="0.0" text="poder registrarlo">
+         <font>
+            <Font size="12.0" />
+         </font>
+      </Text>
+   </children>
+</AnchorPane>

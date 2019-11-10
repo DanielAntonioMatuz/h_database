@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<classpath>
+	<classpathentry kind="con" path="org.eclipse.jdt.launching.JRE_CONTAINER"/>
+	<classpathentry kind="src" path="GardenLife/GardenLife/src"/>
+	<classpathentry kind="lib" path="GardenLife_lib/iText-5.0.5.jar"/>
+	<classpathentry kind="lib" path="GardenLife_lib/itextpdf-5.0.6.jar"/>
+	<classpathentry kind="lib" path="GardenLife_lib/JavaFX Scene Transition.jar"/>
+	<classpathentry kind="lib" path="GardenLife_lib/poi-4.0.1.jar"/>
+	<classpathentry kind="lib" path="GardenLife_lib/poi-examples-4.0.1.jar"/>
+	<classpathentry kind="lib" path="GardenLife_lib/poi-excelant-4.0.1.jar"/>
+	<classpathentry kind="lib" path="GardenLife_lib/poi-ooxml-4.0.1.jar"/>
+	<classpathentry kind="lib" path="GardenLife_lib/poi-ooxml-schemas-4.0.1.jar"/>
+	<classpathentry kind="lib" path="GardenLife_lib/poi-scratchpad-4.0.1.jar"/>
+	<classpathentry kind="lib" path="GardenLife_lib/slf4j.api-1.6.1.jar"/>
+	<classpathentry kind="lib" path="GardenLife_lib/Util.jar"/>
+	<classpathentry kind="lib" path="GardenLife.jar"/>
+	<classpathentry kind="lib" path="GardenLife/GardenLife/classes/artifacts/EnormV/EnormV.jar"/>
+	<classpathentry kind="lib" path="GardenLife/GardenLife/dist/JavaFX Scene Transition.jar"/>
+	<classpathentry kind="lib" path="C:/Users/danie/Documents/jarJDBC/postgresql-42.2.6.jar"/>
+	<classpathentry kind="output" path="GardenLife/GardenLife/build/classes"/>
+</classpath>

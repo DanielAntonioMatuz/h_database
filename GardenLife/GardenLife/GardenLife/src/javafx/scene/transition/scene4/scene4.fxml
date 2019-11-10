@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.chart.AreaChart?>
+<?import javafx.scene.chart.BarChart?>
+<?import javafx.scene.chart.CategoryAxis?>
+<?import javafx.scene.chart.LineChart?>
+<?import javafx.scene.chart.NumberAxis?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ComboBox?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane id="AnchorPane" prefHeight="1000" prefWidth="1900" style="-fx-background-color: white;" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="javafx.scene.transition.scene4.Scene4Controller">
+   <children>
+      <ImageView fitHeight="1000" fitWidth="1900" pickOnBounds="true">
+         <image>
+            <Image url="@../../../../img/reportes.png" />
+         </image>
+      </ImageView>
+      <TableView fx:id="reportes" layoutX="20.0" layoutY="148.0" prefHeight="828.0" prefWidth="1854.0" visible="false">
+        <columns>
+          <TableColumn fx:id="nombre" prefWidth="275.0" text="PRODUCTO" />
+          <TableColumn fx:id="cantidad" prefWidth="359.0" text="CANTIDAD" />
+            <TableColumn fx:id="precio" prefWidth="237.0" text="PRECIO UNITARIO" />
+            <TableColumn fx:id="subtotal" prefWidth="153.0" text="SUBTOTAL" />
+            <TableColumn fx:id="iva" minWidth="0.0" prefWidth="206.0" text="COSTO TOTAL" />
+            <TableColumn fx:id="costoTotal" minWidth="0.0" prefWidth="217.0" text="IVA" />
+            <TableColumn fx:id="fecha" prefWidth="406.0" text="FECHA" />
+        </columns>
+      </TableView>
+      <ComboBox fx:id="filtro" layoutX="1395.0" layoutY="32.0" prefHeight="77.0" prefWidth="326.0" promptText="T I P O   R E P O R T E" />
+      <Button fx:id="buscar" layoutX="1741.0" layoutY="40.0" mnemonicParsing="false" onAction="#btnGenera" prefHeight="47.0" prefWidth="105.0" style="-fx-background-color: GREEN;" text="B U S C A R" textFill="WHITE">
+         <font>
+            <Font name="HP Simplified Light" size="15.0" />
+         </font>
+      </Button>
+      <Button fx:id="menu" layoutX="20.0" layoutY="40.0" mnemonicParsing="false" onAction="#regresarMenu" prefHeight="47.0" prefWidth="105.0" style="-fx-background-color: GREEN;" text="M E N U" textFill="WHITE">
+         <font>
+            <Font name="HP Simplified Light" size="15.0" />
+         </font>
+      </Button>
+      <LineChart fx:id="chartBarras" layoutX="7.0" layoutY="140.0" prefHeight="853.0" prefWidth="1891.0">
+        <xAxis>
+          <CategoryAxis side="BOTTOM" fx:id="xAxis" />
+        </xAxis>
+        <yAxis>
+          <NumberAxis side="LEFT" />
+        </yAxis>
+      </LineChart>
+      <BarChart fx:id="barras" layoutX="2.0" layoutY="137.0" prefHeight="860.0" prefWidth="1891.0">
+         <xAxis>
+          <CategoryAxis side="BOTTOM" fx:id="xAxis" />
+        </xAxis>
+        <yAxis>
+          <NumberAxis side="LEFT" />
+        </yAxis>
+      </BarChart>
+      <BarChart fx:id="barras2" layoutX="7.0" layoutY="137.0" prefHeight="853.0" prefWidth="1891.0">
+         <xAxis>
+          <CategoryAxis side="BOTTOM" fx:id="xAxis" />
+        </xAxis>
+        <yAxis>
+          <NumberAxis side="LEFT" />
+        </yAxis>
+      </BarChart>
+      <AreaChart fx:id="line" layoutX="10.0" layoutY="137.0" prefHeight="853.0" prefWidth="1891.0">
+         <xAxis>
+          <CategoryAxis side="BOTTOM" fx:id="xAxis" />
+        </xAxis>
+        <yAxis>
+          <NumberAxis side="LEFT" />
+        </yAxis>
+      </AreaChart>
+   </children>
+</AnchorPane>

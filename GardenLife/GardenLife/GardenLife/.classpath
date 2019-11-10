@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<classpath>
+	<classpathentry kind="con" path="org.eclipse.jdt.launching.JRE_CONTAINER"/>
+	<classpathentry kind="src" path="src"/>
+	<classpathentry kind="lib" path="dist/JavaFX Scene Transition.jar"/>
+	<classpathentry kind="lib" path="D:/Descargas/mysql-connector-java-8.0.16/mysql-connector-java-8.0.16/mysql-connector-java-8.0.16.jar"/>
+	<classpathentry kind="lib" path="C:/Users/danie/OneDrive/Documentos/JAR/Util.jar"/>
+	<classpathentry kind="lib" path="C:/Users/danie/OneDrive/Documentos/JAR/iText-5.0.5.jar"/>
+	<classpathentry kind="lib" path="C:/Users/danie/OneDrive/Documentos/JAR/itextpdf-5.0.6.jar"/>
+	<classpathentry kind="lib" path="C:/Users/danie/OneDrive/Documentos/JAR/P O I/poi-4.0.1.jar"/>
+	<classpathentry kind="lib" path="C:/Users/danie/OneDrive/Documentos/JAR/P O I/poi-examples-4.0.1.jar"/>
+	<classpathentry kind="lib" path="C:/Users/danie/OneDrive/Documentos/JAR/P O I/poi-excelant-4.0.1.jar"/>
+	<classpathentry kind="lib" path="C:/Users/danie/OneDrive/Documentos/JAR/P O I/poi-ooxml-4.0.1.jar"/>
+	<classpathentry kind="lib" path="C:/Users/danie/OneDrive/Documentos/JAR/P O I/poi-ooxml-schemas-4.0.1.jar"/>
+	<classpathentry kind="lib" path="C:/Users/danie/OneDrive/Documentos/JAR/P O I/poi-scratchpad-4.0.1.jar"/>
+	<classpathentry kind="lib" path="C:/Users/danie/OneDrive/Escritorio/sqljdbc_6.0/esn/jre8/sqljdbc42.jar"/>
+	<classpathentry kind="lib" path="D:/Descargas/slf4j.api-1.6.1.jar/slf4j.api-1.6.1.jar"/>
+	<classpathentry kind="output" path="build/classes"/>
+</classpath>

@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE hibernate-mapping PUBLIC "-//Hibernate/Hibernate Mapping DTD 3.0//EN" "http://www.hibernate.org/dtd/hibernate-mapping-3.0.dtd">
+<hibernate-mapping package="javafx.scene.transition.mapeo">
+  <class name="Producto" table="producto">
+   <id name="id"
+            column="id"
+            type="java.lang.Integer"
+            unsaved-value="null" >
+            <generator class="native">
+            </generator>
+        </id>
+
+
+      <property name="fechaIngreso" column="fechaIngreso" />
+      <property name="condicion" column="condicion" />
+      <property name="nombre" column="nombre" />
+      <property name="idProducto" column="idProducto" />
+      <many-to-one name="tipoProducto" class="tipoProducto" fetch="select">
+          <column name="tipoProducto" not-null="true" />
+      </many-to-one>
+
+  </class>
+</hibernate-mapping>

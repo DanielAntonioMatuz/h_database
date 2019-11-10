@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE hibernate-mapping PUBLIC "-//Hibernate/Hibernate Mapping DTD 3.0//EN" "http://www.hibernate.org/dtd/hibernate-mapping-3.0.dtd">
+<hibernate-mapping package="javafx.scene.transition.mapeo">
+  <class name="Historial" table="Historial">
+   <id name="id"
+            column="idFotografia"
+            type="java.lang.Integer"
+            unsaved-value="null" >
+            <generator class="native">
+            </generator>
+        </id>
+
+      <property name="fotografia" column="fotografia" />
+  </class>
+</hibernate-mapping>

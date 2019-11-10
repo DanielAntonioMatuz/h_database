@@ -1,0 +1,8 @@
+usuario para iniciar programa: daniel
+contraseña: danieludo
+
+Sí desea poder ejecutar el programa, deberá cambiar las rustas del MediaView, ya que esta añadido la URL local de nuestra PC de desarrollo, se anexa ambos videos.
+
+También deberá añadir el JAR de SQL Server y MySQL
+
+O bien, si desea ejecutar el proyecto sin complicaciones, lo hemos exportado a un "JAR", que puede ejecutarse inmediatamente sin configuraciones, el usuario y contraseña son el mismo.

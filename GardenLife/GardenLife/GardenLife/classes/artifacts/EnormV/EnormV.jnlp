@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<jnlp spec="1.0" xmlns:jfx="http://javafx.com" href="EnormV.jnlp">
+  <information>
+    <title>EnormV</title>
+    <vendor>Upworks</vendor>
+    <description>EnormV</description>
+    <offline-allowed/>
+  </information>
+  <resources>
+    <j2se version="1.6+" href="http://java.sun.com/products/autodl/j2se"/>
+    <jar href="EnormV.jar" size="4161736" download="eager" />
+  </resources>
+  <jfx:javafx-desc  width="1900" height="1000" main-class="Main"  name="EnormV" />
+  <update check="background"/>
+</jnlp>

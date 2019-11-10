@@ -1,0 +1,21 @@
+<component name="libraryTable">
+  <library name="GardenLife_lib">
+    <CLASSES>
+      <root url="jar://$PROJECT_DIR$/GardenLife/GardenLife_lib/sqljdbc42.jar!/" />
+      <root url="jar://$PROJECT_DIR$/GardenLife/GardenLife_lib/iText-5.0.5.jar!/" />
+      <root url="jar://$PROJECT_DIR$/GardenLife/GardenLife_lib/JavaFX Scene Transition.jar!/" />
+      <root url="jar://$PROJECT_DIR$/GardenLife/GardenLife_lib/poi-ooxml-4.0.1.jar!/" />
+      <root url="jar://$PROJECT_DIR$/GardenLife/GardenLife_lib/itextpdf-5.0.6.jar!/" />
+      <root url="jar://$PROJECT_DIR$/GardenLife/GardenLife_lib/poi-4.0.1.jar!/" />
+      <root url="jar://$PROJECT_DIR$/GardenLife/GardenLife_lib/poi-excelant-4.0.1.jar!/" />
+      <root url="jar://$PROJECT_DIR$/GardenLife/GardenLife_lib/poi-ooxml-schemas-4.0.1.jar!/" />
+      <root url="jar://$PROJECT_DIR$/GardenLife/GardenLife_lib/poi-examples-4.0.1.jar!/" />
+      <root url="jar://$PROJECT_DIR$/GardenLife/GardenLife_lib/poi-scratchpad-4.0.1.jar!/" />
+      <root url="jar://$PROJECT_DIR$/GardenLife/GardenLife_lib/Util.jar!/" />
+      <root url="jar://$PROJECT_DIR$/GardenLife/GardenLife_lib/slf4j.api-1.6.1.jar!/" />
+      <root url="jar://$PROJECT_DIR$/GardenLife/GardenLife_lib/mysql-connector-java-8.0.16.jar!/" />
+    </CLASSES>
+    <JAVADOC />
+    <SOURCES />
+  </library>
+</component>

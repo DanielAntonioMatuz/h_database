@@ -1,0 +1,95 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ComboBox?>
+<?import javafx.scene.control.ListView?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.shape.Line?>
+<?import javafx.scene.shape.Rectangle?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<AnchorPane id="AnchorPane" prefHeight="1000" prefWidth="1900" style="-fx-background-color: white;" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="javafx.scene.transition.scene8.Scene8Controller">
+   <children>
+      <ImageView fitHeight="1000" fitWidth="1900" pickOnBounds="true">
+         <image>
+            <Image url="@../../../../img/reportes.png" />
+         </image>
+      </ImageView>
+      <ComboBox fx:id="filtro" layoutX="1395.0" layoutY="32.0" prefHeight="77.0" prefWidth="326.0" promptText="F I L T R A R" />
+      <Button fx:id="buscar" layoutX="1741.0" layoutY="40.0" mnemonicParsing="false" onAction="#buscarDatos" prefHeight="47.0" prefWidth="105.0" style="-fx-background-color: GREEN;" text="B U S C A R" textFill="WHITE">
+         <font>
+            <Font name="HP Simplified Light" size="15.0" />
+         </font>
+      </Button>
+      <Button fx:id="menu" layoutX="20.0" layoutY="40.0" mnemonicParsing="false" onAction="#regresarMenu" prefHeight="47.0" prefWidth="105.0" style="-fx-background-color: GREEN;" text="M E N U" textFill="WHITE">
+         <font>
+            <Font name="HP Simplified Light" size="15.0" />
+         </font>
+      </Button>
+      <Button fx:id="exportar" layoutX="805.0" layoutY="46.0" mnemonicParsing="false" prefHeight="47.0" prefWidth="170.0" style="-fx-background-color: black;" text="EXPORTAR A PDF" textFill="WHITE" visible="false">
+         <font>
+            <Font name="HP Simplified Light" size="15.0" />
+         </font>
+      </Button>
+      <Button fx:id="sinFiltro" layoutX="984.0" layoutY="47.0" mnemonicParsing="false" prefHeight="47.0" prefWidth="136.0" style="-fx-background-color: black;" text="QUITAR FILTRO" textFill="WHITE" visible="false">
+         <font>
+            <Font name="HP Simplified Light" size="15.0" />
+         </font>
+      </Button>
+      <Text layoutX="321.0" layoutY="79.0" strokeType="OUTSIDE" strokeWidth="0.0" text="G A L E R I A   D E   I M Á G E N E S">
+         <font>
+            <Font name="HP Simplified Light" size="29.0" />
+         </font>
+      </Text>
+      <ImageView fx:id="img1" fitHeight="785.0" fitWidth="844.0" layoutX="961.0" layoutY="160.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../../../../../../../../FotosBD/f3464a4fa60862d22af519b2e96008e6-flor-rosa-hawaiana-by-vexels.png" />
+         </image></ImageView>
+      <Button fx:id="atras" layoutX="61.0" layoutY="400.0" mnemonicParsing="false" onAction="#buscarDatos" prefHeight="47.0" prefWidth="136.0" style="-fx-background-color: GREEN;" text="B U S C A R" textFill="WHITE">
+         <font>
+            <Font name="HP Simplified Light" size="15.0" />
+         </font>
+      </Button>
+      <Button fx:id="adelante" layoutX="350.0" layoutY="180.0" mnemonicParsing="false" onAction="#visor" prefHeight="47.0" prefWidth="136.0" style="-fx-background-color: GREEN;" text="A B R I R   V I S O R" textFill="WHITE">
+         <font>
+            <Font name="HP Simplified Light" size="15.0" />
+         </font>
+      </Button>
+      <TableView fx:id="imagenes" layoutX="497.0" layoutY="138.0" prefHeight="854.0" prefWidth="393.0">
+        <columns>
+          <TableColumn id="producto" fx:id="nombreQ" prefWidth="392.0" text="I D    F O T O" />
+          <TableColumn id="url" fx:id="urlQ" minWidth="0.0" prefWidth="0.0" text="URL " />
+        </columns>
+      </TableView>
+      <ComboBox fx:id="productosComb" layoutX="61.0" layoutY="297.0" prefHeight="77.0" prefWidth="372.0" promptText="P R O D U C T O" style="-fx-background-color: WHITE; -fx-border-color: BLACK;" />
+      <Text fill="WHITE" layoutX="64.0" layoutY="285.0" strokeType="OUTSIDE" strokeWidth="0.0" text="S E L E C C I O N E     U N    P R O D U C T O">
+         <font>
+            <Font size="19.0" />
+         </font>
+      </Text>
+      <Text fill="WHITE" layoutX="350.0" layoutY="175.0" strokeType="OUTSIDE" strokeWidth="0.0" text="V I S U A L I C E    E  N">
+         <font>
+            <Font size="14.0" />
+         </font>
+      </Text>
+      <TextField fx:id="idProductoT" layoutX="64.0" layoutY="533.0" prefHeight="56.0" prefWidth="366.0" promptText="I D   P R O D U C T O" style="-fx-background-color: WHITE;" visible="false" />
+      <TextField fx:id="urlDatos" layoutX="64.0" layoutY="610.0" prefHeight="56.0" prefWidth="366.0" promptText="U R L" style="-fx-background-color: WHITE;" visible="false" />
+      <Line endX="395.0" layoutX="102.0" layoutY="464.0" startX="-100.0" />
+      <Text fill="WHITE" layoutX="200.0" layoutY="495.0" strokeType="OUTSIDE" strokeWidth="0.0" text="E L I M I N A R" />
+      <ListView fx:id="list" layoutX="64.0" layoutY="638.0" prefHeight="353.0" prefWidth="179.0" />
+      <Text fill="WHITE" layoutX="100.0" layoutY="626.0" strokeType="OUTSIDE" strokeWidth="0.0" text="N O M B R E" />
+      <Text fill="WHITE" layoutX="331.0" layoutY="625.0" strokeType="OUTSIDE" strokeWidth="0.0" text="I D" />
+      <Line endX="395.0" layoutX="102.0" layoutY="599.0" startX="-100.0" />
+      <ListView fx:id="list2" layoutX="251.0" layoutY="638.0" prefHeight="353.0" prefWidth="179.0" />
+      <TextField fx:id="Teliminar" layoutX="64.0" layoutY="518.0" prefHeight="56.0" prefWidth="214.0" promptText="I D  P R O D U C T O" style="-fx-background-color: WHITE; -fx-border-color: BLACK;" />
+      <Button fx:id="eliminar" layoutX="289.0" layoutY="524.0" mnemonicParsing="false" onAction="#eliminar" prefHeight="47.0" prefWidth="125.0" style="-fx-background-color: GREEN;" text="E L I M I N A R" textFill="WHITE" />
+      <Rectangle arcHeight="5.0" arcWidth="5.0" fill="#f2ecec" height="117.0" layoutX="1120.0" layoutY="14.0" stroke="TRANSPARENT" strokeType="INSIDE" width="748.0" />
+
+   </children>
+</AnchorPane>
